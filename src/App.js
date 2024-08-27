@@ -8,9 +8,11 @@ function App() {
   return(
     <div className="app-root-component">
       <AppHeader />
-      <Routes>
-        <Route path="/" Component={Dashboard} />
-      </Routes>
+      <div className="app-body-element">
+        <Routes>
+          <Route path="/" Component={Dashboard} />
+        </Routes>
+      </div>
     </div>
   )
 }

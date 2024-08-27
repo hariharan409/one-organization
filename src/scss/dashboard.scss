@@ -1,0 +1,16 @@
+
+
+.dashboard-root-element {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-tab-style {
+    font-weight: 600 !important; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+.custom-tab-style.Mui-selected {
+    background-color: #1976d2;
+    color: #FFF !important;
+}
