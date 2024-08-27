@@ -1,0 +1,50 @@
+
+
+.app-header-root-element {
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/pages/app-header/app-header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app-header-root-element::before {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.app-header-overlay-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255,255,255,0.1);
+    height: 100%;
+}
+
+.app-header-overlay-content-row-1 {
+    background-color: rgba(255,255,255,1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.app-header-overlay-content-row-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    justify-content: center;
+}
+
+.app-header-company-logo {
+    border-radius: 5px;
+    margin: 5px;
+    width: 130px;
+}
