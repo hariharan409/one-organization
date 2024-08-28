@@ -11,7 +11,7 @@ const EnterpriseTabView = () => {
                 enterpriseList.map((enterprise) => {
                     return(
                         <div key={enterprise.id} className="enterprise-tab-view-grid-item">
-                            <CardMedia component="img" className="enterprise-tab-view-grid-item-image" src={enterprise.appImage} title="hi" />
+                            <CardMedia component="img" className="enterprise-tab-view-grid-item-image" src={enterprise.appImage} />
                             <div className="enterprise-tab-view-grid-item-use-seatrium-email-button">
                                 <span>login using seatrium email</span>
                             </div>

@@ -3,8 +3,10 @@ import TabContext from "@mui/lab/TabContext";
 import Tab from "@mui/material/Tab";
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import "../../scss/dashboard.scss";
 import EnterpriseTabView from "./EnterpriseTabView";
+import LineOfBusinessTabView from "./LineOfBusinessTabView";
+import ITHelpDesk from "./ITHelpDesk";
+import "../../scss/dashboard.scss";
 
 const Dashboard = () => {
     const [tabValue,setTabValue] = useState("0");
@@ -32,10 +34,10 @@ const Dashboard = () => {
                     <EnterpriseTabView />
                 </TabPanel>
                 <TabPanel value="1" className="custom-tab-panel-style">
-
+                    <LineOfBusinessTabView />
                 </TabPanel>
                 <TabPanel value="2" className="custom-tab-panel-style">
-
+                    <ITHelpDesk />
                 </TabPanel>
             </TabContext>
         </div>
