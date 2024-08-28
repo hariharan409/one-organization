@@ -6,7 +6,7 @@
     display: grid;
     /* NOTE: THIS AUTO FIT WILL WRAP THE OVERFLOW X AXIS ELEMENTS TO NEXT LINE. */
     grid-template-columns: repeat(auto-fit,minmax(250px,400px));
-    grid-gap: 10px 10px;
+    grid-gap: 10px 30px;
     overflow: auto;
 }
 

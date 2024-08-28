@@ -18,11 +18,11 @@ const EnterpriseTabView = () => {
                         <Card key={enterprise.id} className="enterprise-tab-view-grid-item">
                             <CardMedia component="img" sx={{height: "150px",objectFit: "cover"}} src={enterprise.appImage} title="hi" />
                             <CardContent>
-                                <Typography variant="body1" component="div">
+                                <Typography variant="body1" component="div" sx={{textTransform: "capitalize"}}>
                                     {enterprise.appName}
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                    cloud platform for managing finance, HR, and planning
+                                    {enterprise.appDescription}
                                 </Typography>
                             </CardContent>
                             <CardActions>
