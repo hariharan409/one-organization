@@ -12,9 +12,9 @@ const ITHelpDesk = () => {
                     return(
                         <div key={helpdesk.id} className="it-helpdesk-tab-view-grid-item">
                             <CardMedia component="img" className="it-helpdesk-tab-view-grid-item-image" src={helpdesk.appImage} />
-                            <div className="it-helpdesk-tab-view-grid-item-link">
-                                <span>{helpdesk.appName}</span>
-                            </div>
+                            <a className="it-helpdesk-tab-view-grid-item-link" href="###">
+                                {helpdesk.appName}
+                            </a>
                         </div>
                     )
                 })

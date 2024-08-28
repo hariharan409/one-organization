@@ -12,9 +12,9 @@ const LineOfBusinessTabView = () => {
                     return(
                         <div key={business.id} className="line-of-business-tab-view-grid-item">
                             <CardMedia component="img" className="line-of-business-tab-view-grid-item-image" src={business.appImage} title="hi" />
-                            <div className="line-of-business-tab-view-grid-item-link">
-                                <span>{business.appName}</span>
-                            </div>
+                            <a className="line-of-business-tab-view-grid-item-link" href="###">
+                                {business.appName}
+                            </a>
                         </div>
                     )
                 })

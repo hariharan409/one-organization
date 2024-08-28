@@ -23,32 +23,34 @@
     border-radius: 0px 44px 0px 44px;
 }
 
-.enterprise-tab-view-grid-item-use-seatrium-email-button {
-    background-color: #003EFF;
+.enterprise-tab-view-grid-item-use-seatrium-email-link {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
     padding: 3px;
     text-align: center;
-    color: #FFF;
-    box-shadow: 6px 6px 10px #000000;
-    border-radius: 28px;
+    color: blue;
+    font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
-
-    :hover {
-        color: rgba(0,0,0,1);
-    }
 }
 
-.enterprise-tab-view-grid-item-dont-have-seatrium-email-button {
-    background-color: #003EFF;
+.enterprise-tab-view-grid-item-dont-have-seatrium-email-link {
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
     padding: 3px;
     text-align: center;
-    color: #FFF;
-    box-shadow: 6px 6px 10px #000000;
-    border-radius: 28px;
+    color: blue;
+    font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
+}
 
-    :hover {
-        color: rgba(0,0,0,1);
-    }
+a:hover {
+    color: rgba(0,0,255,0.5);
 }

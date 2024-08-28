@@ -28,31 +28,31 @@ import SelfServiceImage from "../../../assets/pages/app-body/dashboard/it-helpde
 export const enterpriseList = [
     {
         id: 1,
-        appName: "workday",
+        appName: "Workday",
         appDescription: "cloud platform for managing finance, HR, and planning",
         appImage: WorkDayImage,
     },
     {
         id: 2,
-        appName: "fiori sg users",
+        appName: "Fiori SG Users",
         appDescription: "tailored access to enterprise resources",
         appImage: FioriImage,
     },
     {
         id: 3,
-        appName: "fiori non-sg users",
+        appName: "Fiori Non-SG Users",
         appDescription: "tailored access to enterprise resources",
         appImage: FioriImage,
     },
     {
         id: 4,
-        appName: "concur",
+        appName: "Concur",
         appDescription: "providing seamless tracking and reporting",
         appImage: ConcurImage,
     },
     {
         id: 5,
-        appName: "microsoft entra",
+        appName: "Microsoft Entra",
         appDescription: "secure, unified controls",
         appImage: MicrosoftEntraImage,
     }

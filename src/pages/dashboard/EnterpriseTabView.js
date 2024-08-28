@@ -12,12 +12,12 @@ const EnterpriseTabView = () => {
                     return(
                         <div key={enterprise.id} className="enterprise-tab-view-grid-item">
                             <CardMedia component="img" className="enterprise-tab-view-grid-item-image" src={enterprise.appImage} />
-                            <div className="enterprise-tab-view-grid-item-use-seatrium-email-button">
-                                <span>login using seatrium email</span>
-                            </div>
-                            <div className="enterprise-tab-view-grid-item-dont-have-seatrium-email-button">
-                                <span>don't have seatrium email</span>
-                            </div>
+                            <a className="enterprise-tab-view-grid-item-use-seatrium-email-link" href="###">
+                                Login Using Seatrium Email
+                            </a>
+                            <a className="enterprise-tab-view-grid-item-dont-have-seatrium-email-link" href="###">
+                                Don't Have Seatrium Email
+                            </a>
                         </div>
                     )
                 })
