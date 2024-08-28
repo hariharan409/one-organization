@@ -9,7 +9,7 @@ const LineOfBusinessTabView = () => {
 
     return(
         <div className="line-of-business-tab-view-layout-element">
-            <Slider {...sliderProps}>
+            <Slider {...sliderProps(lineOfBusinessList.length)}>
                 {
                     lineOfBusinessList.map((business) => {
                         return(

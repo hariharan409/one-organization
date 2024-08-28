@@ -9,7 +9,7 @@ const ITHelpDesk = () => {
 
     return(
         <div className="it-helpdesk-tab-view-layout-element">
-            <Slider {...sliderProps}>
+            <Slider {...sliderProps(itHelpDeskList.length)}>
                 {
                     itHelpDeskList.map((helpdesk) => {
                         return(

@@ -9,7 +9,7 @@ const EnterpriseTabView = () => {
 
     return(
         <div className="enterprise-tab-view-layout-element">
-            <Slider {...sliderProps}>
+            <Slider {...sliderProps(enterpriseList.length)}>
                 {
                     enterpriseList.map((enterprise) => {
                         return(
