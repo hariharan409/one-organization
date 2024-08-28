@@ -1,29 +1,25 @@
 
 
-.enterprise-tab-view-grid-layout-element {
+.enterprise-tab-view-layout-element {
     height: 100%;
     width: 100%;
-    display: grid;
-    /* NOTE: THIS AUTO FIT WILL WRAP THE OVERFLOW X AXIS ELEMENTS TO NEXT LINE. */
-    grid-template-columns: repeat(auto-fit,minmax(200px,200px));
-    justify-content: space-around;
-    grid-gap: 30px 30px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
-.enterprise-tab-view-grid-item {
+.enterprise-tab-view-item {
     padding: 5px;
-    justify-self: center;
+    min-width: 200px;
+    max-width: 200px;
 }
 
-.enterprise-tab-view-grid-item-image {
+.enterprise-tab-view-item-image {
     height: 200px;
     object-fit: cover;
     box-shadow: 6px 6px 10px #000000;
     border-radius: 0px 44px 0px 44px;
 }
 
-.enterprise-tab-view-grid-item-use-seatrium-email-link {
+.enterprise-tab-view-item-use-seatrium-email-link {
     height: 20px;
     display: flex;
     justify-content: center;
@@ -37,7 +33,7 @@
     cursor: pointer;
 }
 
-.enterprise-tab-view-grid-item-dont-have-seatrium-email-link {
+.enterprise-tab-view-item-dont-have-seatrium-email-link {
     height: 10px;
     display: flex;
     justify-content: center;
