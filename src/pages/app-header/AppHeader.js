@@ -14,6 +14,7 @@ const AppHeader = () => {
             <div className="app-header-overlay-content">
                 <div className="app-header-overlay-content-row-1">
                     <img src={CompanyLogo} alt="company-logo" className="app-header-company-logo"/>
+                    <span className="app-header-company-name">one seatrium - portal</span>
                 </div>
                 <div className="app-header-overlay-content-row-2">
                     <label style={{color: "#FFF",fontSize: "2rem",fontFamily: "serif"}}>How can we help you?</label>

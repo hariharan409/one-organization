@@ -4,6 +4,7 @@ import Tab from "@mui/material/Tab";
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import "../../scss/dashboard.scss";
+import EnterpriseTabView from "./EnterpriseTabView";
 
 const Dashboard = () => {
     const [tabValue,setTabValue] = useState("0");
@@ -27,9 +28,15 @@ const Dashboard = () => {
                         <Tab label="it-helpdesk" value="2" className="custom-tab-style" />
                     </TabList>
                 </div>
-                <TabPanel value="0">0</TabPanel>
-                <TabPanel value="1">1</TabPanel>
-                <TabPanel value="2">2</TabPanel>
+                <TabPanel value="0" className="custom-tab-panel-style">
+                    <EnterpriseTabView />
+                </TabPanel>
+                <TabPanel value="1" className="custom-tab-panel-style">
+
+                </TabPanel>
+                <TabPanel value="2" className="custom-tab-panel-style">
+
+                </TabPanel>
             </TabContext>
         </div>
     );

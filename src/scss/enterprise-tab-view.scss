@@ -1,0 +1,18 @@
+
+
+.enterprise-tab-view-grid-layout-element {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* NOTE: THIS AUTO FIT WILL WRAP THE OVERFLOW X AXIS ELEMENTS TO NEXT LINE. */
+    grid-template-columns: repeat(auto-fit,minmax(250px,400px));
+    grid-gap: 10px 10px;
+    overflow: auto;
+}
+
+.enterprise-tab-view-grid-item {
+    padding: 5px;
+    height: 300px;
+    border-radius: 5px !important;
+    box-shadow: 6px 6px 10px #000000 !important;
+}
