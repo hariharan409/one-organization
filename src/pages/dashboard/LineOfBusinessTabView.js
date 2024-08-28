@@ -11,7 +11,7 @@ const LineOfBusinessTabView = () => {
                 lineOfBusinessList.map((business) => {
                     return(
                         <div key={business.id} className="line-of-business-tab-view-grid-item">
-                            <CardMedia component="img" className="line-of-business-tab-view-grid-item-image" src={business.appImage} title="hi" />
+                            <CardMedia component="img" className="line-of-business-tab-view-grid-item-image" src={business.appImage} />
                             <a className="line-of-business-tab-view-grid-item-link" href="###">
                                 {business.appName}
                             </a>
