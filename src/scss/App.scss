@@ -20,8 +20,8 @@
 
   .app-body-element {
     width: 100%;
-    // SUBTRACTING 100% - 300px(APP HEADER HEIGHT) TO MAINTAIN THE SCREEN FIT
-    height: calc(100% - 300px);
+    // SUBTRACTING 100% - 50PX(APP HEADER ONE HEIGHT) 250px(APP HEADER TWO HEIGHT) TO MAINTAIN THE SCREEN FIT
+    height: calc(100% - 250px - 50px);
     margin: 0%;
     padding: 0%;
     overflow-y: auto;
