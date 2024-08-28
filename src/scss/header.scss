@@ -22,7 +22,7 @@
 .app-header-overlay-content {
     position: relative;
     z-index: 2;
-    background-color: rgba(0,62,255,0.3);
+    background-color: rgba(0,62,255,0.2);
     height: 100%;
 }
 
@@ -47,11 +47,11 @@
 .app-header-company-logo {
     border-radius: 5px;
     margin: 5px;
-    width: 130px;
+    width: 150px;
 }
 
 .app-header-company-name {
-    color: #003eff;
+    color: #000;
     font-size: larger;
     font-weight: bold;
     font-family: serif;

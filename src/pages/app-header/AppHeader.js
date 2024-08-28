@@ -14,7 +14,7 @@ const AppHeader = () => {
             <div className="app-header-overlay-content">
                 <div className="app-header-overlay-content-row-1">
                     <img src={CompanyLogo} alt="company-logo" className="app-header-company-logo"/>
-                    <span className="app-header-company-name">one seatrium - portal</span>
+                    <span className="app-header-company-name">integrated service portal</span>
                     <div />
                 </div>
                 <div className="app-header-overlay-content-row-2">
