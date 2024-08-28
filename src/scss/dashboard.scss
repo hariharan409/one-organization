@@ -11,13 +11,20 @@
 }
 
 .custom-tab-style.Mui-selected {
-    background-color: #1976d2;
-    color: #FFF !important;
+    background-color: rgba(242,242,242,1);
+    color: #000 !important;
+    border: 1px solid #003EFF;
+    border-bottom: none !important;
 }
 
 .custom-tab-panel-style {
     height: calc(100% - 50px);
     padding: 0%;
-    border: 1px solid #1976d2;
+    border: 1px solid #003EFF;
     background-color: rgba(242,242,242,1);
+}
+
+.css-1sj2jcg-MuiTabs-indicator {
+    margin-top:2px !important;
+    background-color: rgba(242,242,242,1) !important;
 }
