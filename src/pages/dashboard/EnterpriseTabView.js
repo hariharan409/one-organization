@@ -4,8 +4,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Slider from "react-slick";
 import Grow from "@mui/material/Grow";
 import { sliderProps } from "./sliderProps";
-import "../../scss/enterprise-tab-view.scss";
 import { SearchContext } from "../../contexts/SearchContext";
+import "../../scss/enterprise-tab-view.scss";
 
 const EnterpriseTabView = () => {
     const {searchText} = useContext(SearchContext);
@@ -17,7 +17,6 @@ const EnterpriseTabView = () => {
             return;
         }
         let tempList = enterpriseList.filter((enterprise) => enterprise.appName.toLowerCase().includes(searchText.toLowerCase()));
-        console.log(tempList);
         setAppList(tempList);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[searchText]);
