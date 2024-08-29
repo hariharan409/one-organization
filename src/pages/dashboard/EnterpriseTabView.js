@@ -14,8 +14,8 @@ const EnterpriseTabView = () => {
                 {
                     enterpriseList.map((enterprise,index) => {
                         return(
-                            <Grow in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
-                                <div key={enterprise.id} className="enterprise-tab-view-item">
+                            <Grow key={enterprise.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
+                                <div className="enterprise-tab-view-item">
                                     <CardMedia component="img" className="enterprise-tab-view-item-image" src={enterprise.appImage} />
                                     <a className="enterprise-tab-view-item-use-seatrium-email-link" href={enterprise.seatriumLoginLink} target="_blank" rel="noreferrer">
                                         Login Using Seatrium Email

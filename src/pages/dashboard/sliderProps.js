@@ -7,6 +7,7 @@ export const sliderProps = (appsLength) => {
         speed: 1000,
         slidesToShow: 5,
         slidesToScroll: Math.min(appsLength,5),
+        rows: 2,
         responsive: [
             {
                 breakpoint: 1520, // For screens smaller than 1520px

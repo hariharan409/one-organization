@@ -14,8 +14,8 @@ const ITHelpDesk = () => {
                 {
                     itHelpDeskList.map((helpdesk,index) => {
                         return(
-                            <Grow in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
-                                <div key={helpdesk.id} className="it-helpdesk-tab-view-item">
+                            <Grow key={helpdesk.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
+                                <div className="it-helpdesk-tab-view-item">
                                     <CardMedia component="img" className="it-helpdesk-tab-view-item-image" src={helpdesk.appImage} />
                                     <a className="it-helpdesk-tab-view-item-link" href={helpdesk.appLink} target="_blank" rel="noreferrer">
                                         {helpdesk.appName}
