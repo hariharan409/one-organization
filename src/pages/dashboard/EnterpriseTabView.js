@@ -43,7 +43,7 @@ const EnterpriseTabView = () => {
                                 </div>
                             </Grow>
                         )
-                    }) : <span style={{alignSelf: "center",backgroundColor: "green"}}>NO DATA AVAILABLE</span>
+                    }) : <h3>No Data Available</h3>
                 }
             </Slider>
         </div>
