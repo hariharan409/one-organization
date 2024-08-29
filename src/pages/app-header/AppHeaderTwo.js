@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import Paper from "@mui/material/Paper";
 import SearchIcon from '@mui/icons-material/Search';
 import Divider from "@mui/material/Divider";
 import "../../scss/header.scss";
+import { SearchContext } from "../../contexts/SearchContext";
 
 const AppHeaderTwo = () => {
+    const {setSearchText} = useContext(SearchContext);
+
+    const onInputChange = (e) => {
+        setSearchText(e.target.value.trim());
+    }
 
     return(
         <div className="app-header-two-root-element">
@@ -18,7 +24,7 @@ const AppHeaderTwo = () => {
                             <SearchIcon />
                         </IconButton>
                         <Divider orientation="vertical" />
-                        <InputBase placeholder="Search Apps..." sx={{width: "100%"}} inputProps={{"aria-label": "search"}} />
+                        <InputBase placeholder="Search Apps..." sx={{width: "100%"}} inputProps={{"aria-label": "search"}} onChange={onInputChange} />
                     </Paper>
                 </div>
             </div>
