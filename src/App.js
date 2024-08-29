@@ -21,9 +21,9 @@ function App() {
         </div>
         <div className="app-footer">
           <span className="app-footer-content">
-            © {currentYear} 
+            copyright © {currentYear} 
             <a href="https://seatrium.com" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>Seatrium.</a>
-            all rights reserved. | terms of use | 
+            all rights reserved. | 
             <a href="https://seatrium.com/assets/privacy-policy/seatrium_Privacy_Policy.pdf" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>privacy policy</a> 
           </span>
         </div>

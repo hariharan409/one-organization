@@ -22,13 +22,16 @@
     font-size: larger;
     font-weight: bold;
     font-family: serif;
+    margin-right: 150px;
 
     @media screen and (max-width: 600px) {
         font-size: medium;
+        margin-right: 50px;
     }
 
     @media screen and (max-width: 430px) {
         font-size: small;
+        margin-right: 0px;
     }
 }
 
