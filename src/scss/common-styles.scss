@@ -1,3 +1,8 @@
+/* STYLES FOR BODY TAG STARTS */
+body {
+    font-family: serif;
+}
+
 /* STYLES FOR THE LIBRARY react-slick STARTS */
 .slick-slide {
     text-align: center;
@@ -24,3 +29,21 @@
 }
 
 /* STYLES FOR THE LIBRARY react-slick ENDS */
+
+/* STYLES FOR THE A TAG STARTS */
+
+a {
+    outline: none;
+    border: none;
+
+    :focus {
+        outline: none;
+        border: none;
+    }
+
+    :hover {
+        opacity: 0.8;
+    }
+}
+
+/* STYLES FOR THE A TAG ENDS */

@@ -18,7 +18,7 @@ const AppHeaderTwo = () => {
         <div className="app-header-two-root-element">
             <div className="app-header-two-overlay-content">
                 <div className="app-header-two-overlay-content-row-1">
-                    <label style={{color: "#FFF",fontSize: "2rem",fontFamily: "serif"}}>How can we help you?</label>
+                    <label style={{color: "#FFF",fontSize: "2rem",textTransform: "capitalize"}}>How can i help you?</label>
                     <Paper sx={{width: "50%",display: "flex",flexDirection: "row",padding: "10px",columnGap: "10px"}}>
                         <IconButton aria-label="search">
                             <SearchIcon />

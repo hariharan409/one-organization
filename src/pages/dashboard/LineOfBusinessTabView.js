@@ -16,10 +16,12 @@ const LineOfBusinessTabView = () => {
                         return(
                             <Grow key={business.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div className="line-of-business-tab-view-item">
-                                    <CardMedia component="img" className="line-of-business-tab-view-item-image" src={business.appImage} />
-                                    <a className="line-of-business-tab-view-item-link" href={business.appLink} target="_blank" rel="noreferrer">
-                                        {business.appName}
+                                    <a href={business.appLink} target="_blank" rel="noreferrer">
+                                        <CardMedia component="img" className="line-of-business-tab-view-item-image" src={business.appImage} />
                                     </a>
+                                    <span className="line-of-business-tab-view-item-app-name">
+                                        {business.appName}
+                                    </span>
                                 </div>
                             </Grow>
                         )

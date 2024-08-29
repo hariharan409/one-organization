@@ -1,6 +1,7 @@
 // ENTERPRISE TAB IMAGES
 import WorkDayImage from "../../../assets/pages/app-body/dashboard/enterprise/workday-image.png";
-import FioriImage from "../../../assets/pages/app-body/dashboard/enterprise/fiori-image.png";
+import FioriSGUserImage from "../../../assets/pages/app-body/dashboard/enterprise/fiori-sg-user-image.jpg";
+import FioriNonSGUserImage from "../../../assets/pages/app-body/dashboard/enterprise/fiori-non-sg-user-image.jpg";
 import ConcurImage from "../../../assets/pages/app-body/dashboard/enterprise/concur-image.png";
 import MicrosoftEntraImage from "../../../assets/pages/app-body/dashboard/enterprise/microsoft-entra-image.png";
 // TOP OF BUSINESS TAB IMAGES
@@ -31,7 +32,7 @@ export const enterpriseList = [
         appName: "Workday",
         appDescription: "cloud platform for managing finance, HR, and planning",
         appImage: WorkDayImage,
-        seatriumLoginLink: "https://wd3.myworkday.com/wday/authgwy/seatrium/login.htmld",
+        appLink: "https://wd3.myworkday.com/wday/authgwy/seatrium/login.htmld",
         noSeatriumLink: "https://wd3.myworkday.com/wday/authgwy/seatrium/login.htmld?redirect=n"
 
     },
@@ -39,16 +40,16 @@ export const enterpriseList = [
         id: 2,
         appName: "Fiori SG Users",
         appDescription: "tailored access to enterprise resources",
-        appImage: FioriImage,
-        seatriumLoginLink: "https://erp.seatrium.com/fiori",
+        appImage: FioriSGUserImage,
+        appLink: "https://erp.seatrium.com/fiori",
         noSeatriumLink: "https://erp.seatrium.com/sap/bc/ui2/flp?saml2=disabled"
     },
     {
         id: 3,
         appName: "Fiori Non-SG Users",
         appDescription: "tailored access to enterprise resources",
-        appImage: FioriImage,
-        seatriumLoginLink: "https://onesomerp.seatrium.com/fiori",
+        appImage: FioriNonSGUserImage,
+        appLink: "https://onesomerp.seatrium.com/fiori",
         noSeatriumLink: "https://onesomerp.seatrium.com/sap/bc/ui2/flp?saml2=disabled"
     },
     {
@@ -56,7 +57,7 @@ export const enterpriseList = [
         appName: "Concur",
         appDescription: "providing seamless tracking and reporting",
         appImage: ConcurImage,
-        seatriumLoginLink: "https://launcher.myapps.microsoft.com/api/signin/f4a15dba-3d53-454f-bfea-ce2c46c8cf6d?tenantId=8d348135-f7aa-4a4c-a71c-31df44c7cac3",
+        appLink: "https://launcher.myapps.microsoft.com/api/signin/f4a15dba-3d53-454f-bfea-ce2c46c8cf6d?tenantId=8d348135-f7aa-4a4c-a71c-31df44c7cac3",
         noSeatriumLink: "https://eu2.concursolutions.com/"
     },
     {
@@ -64,7 +65,7 @@ export const enterpriseList = [
         appName: "Microsoft Entra",
         appDescription: "secure, unified controls",
         appImage: MicrosoftEntraImage,
-        seatriumLoginLink: "https://myaccess.microsoft.com/#/",
+        appLink: "https://myaccess.microsoft.com/#/",
     }
 ];
 

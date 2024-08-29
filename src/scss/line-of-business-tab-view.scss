@@ -19,7 +19,7 @@
     border-radius: 0px 44px 0px 44px;
 }
 
-.line-of-business-tab-view-item-link {
+.line-of-business-tab-view-item-app-name {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -27,11 +27,7 @@
     margin-top: 10px;
     padding: 3px;
     text-align: center;
-    color: blue;
+    color: rgba(0, 0, 0, 0.6);
     font-weight: 600;
-    cursor: pointer;
-}
-
-a:hover {
-    color: rgba(0,0,255,0.5);
+    font-size: medium;
 }

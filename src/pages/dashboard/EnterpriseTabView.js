@@ -16,7 +16,8 @@ const EnterpriseTabView = () => {
             setAppList(enterpriseList);
             return;
         }
-        let tempList = appList.filter((enterprise) => enterprise.appName.toLowerCase().includes(searchText.toLowerCase()));
+        let tempList = enterpriseList.filter((enterprise) => enterprise.appName.toLowerCase().includes(searchText.toLowerCase()));
+        console.log(tempList);
         setAppList(tempList);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[searchText]);
@@ -29,9 +30,8 @@ const EnterpriseTabView = () => {
                         return(
                             <Grow key={enterprise.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div className="enterprise-tab-view-item">
-                                    <CardMedia component="img" className="enterprise-tab-view-item-image" src={enterprise.appImage} />
-                                    <a className="enterprise-tab-view-item-use-seatrium-email-link" href={enterprise.seatriumLoginLink} target="_blank" rel="noreferrer">
-                                        Login Using Seatrium Email
+                                    <a href={enterprise.appLink} target="_blank" rel="noreferrer">
+                                        <CardMedia component="img" className="enterprise-tab-view-item-image" src={enterprise.appImage} />
                                     </a>
                                     {
                                     enterprise.noSeatriumLink &&

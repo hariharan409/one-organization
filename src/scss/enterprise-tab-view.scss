@@ -19,22 +19,8 @@
     border-radius: 0px 44px 0px 44px;
 }
 
-.enterprise-tab-view-item-use-seatrium-email-link {
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    padding: 3px;
-    text-align: center;
-    color: blue;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-}
-
 .enterprise-tab-view-item-dont-have-seatrium-email-link {
-    height: 10px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +29,6 @@
     text-align: center;
     color: blue;
     font-weight: 600;
-    font-size: 14px;
     cursor: pointer;
 }
 

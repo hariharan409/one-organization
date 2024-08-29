@@ -19,7 +19,7 @@
     border-radius: 0px 44px 0px 44px;
 }
 
-.it-helpdesk-tab-view-item-link {
+.it-helpdesk-tab-view-item-app-name {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -27,9 +27,9 @@
     margin-top: 10px;
     padding: 3px;
     text-align: center;
-    color: blue;
+    color: rgba(0, 0, 0, 0.6);
     font-weight: 600;
-    cursor: pointer;
+    font-size: medium;
 }
 
 a:hover {

@@ -16,10 +16,12 @@ const ITHelpDesk = () => {
                         return(
                             <Grow key={helpdesk.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div className="it-helpdesk-tab-view-item">
-                                    <CardMedia component="img" className="it-helpdesk-tab-view-item-image" src={helpdesk.appImage} />
-                                    <a className="it-helpdesk-tab-view-item-link" href={helpdesk.appLink} target="_blank" rel="noreferrer">
-                                        {helpdesk.appName}
+                                    <a href={helpdesk.appLink} target="_blank" rel="noreferrer">
+                                        <CardMedia component="img" className="it-helpdesk-tab-view-item-image" src={helpdesk.appImage} />
                                     </a>
+                                    <span className="it-helpdesk-tab-view-item-app-name">
+                                        {helpdesk.appName}
+                                    </span>
                                 </div>
                             </Grow>
                         )
