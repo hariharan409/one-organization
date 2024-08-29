@@ -17,7 +17,7 @@ const LineOfBusinessTabView = () => {
                             <Grow in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div key={business.id} className="line-of-business-tab-view-item">
                                     <CardMedia component="img" className="line-of-business-tab-view-item-image" src={business.appImage} />
-                                    <a className="line-of-business-tab-view-item-link" href="###">
+                                    <a className="line-of-business-tab-view-item-link" href={business.appLink} target="_blank" rel="noreferrer">
                                         {business.appName}
                                     </a>
                                 </div>

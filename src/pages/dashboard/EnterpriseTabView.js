@@ -17,12 +17,16 @@ const EnterpriseTabView = () => {
                             <Grow in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div key={enterprise.id} className="enterprise-tab-view-item">
                                     <CardMedia component="img" className="enterprise-tab-view-item-image" src={enterprise.appImage} />
-                                    <a className="enterprise-tab-view-item-use-seatrium-email-link" href="###">
+                                    <a className="enterprise-tab-view-item-use-seatrium-email-link" href={enterprise.seatriumLoginLink} target="_blank" rel="noreferrer">
                                         Login Using Seatrium Email
                                     </a>
-                                    <a className="enterprise-tab-view-item-dont-have-seatrium-email-link" href="###">
+                                    {
+                                    enterprise.noSeatriumLink &&
+                                    (<a className="enterprise-tab-view-item-dont-have-seatrium-email-link" href={enterprise.noSeatriumLink} target="_blank" rel="noreferrer">
                                         Don't Have Seatrium Email
-                                    </a>
+                                    </a>)
+
+                                    }
                                 </div>
                             </Grow>
                         )
