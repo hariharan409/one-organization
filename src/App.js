@@ -6,6 +6,8 @@ import "./scss/app.scss";
 
 
 function App() {
+  const currentYear = new Date().getFullYear();
+
   return(
     <div className="app-root-component">
       <AppHeaderOne />
@@ -14,6 +16,14 @@ function App() {
         <Routes>
           <Route path="/" Component={Dashboard} />
         </Routes>
+      </div>
+      <div className="app-footer">
+        <span className="app-footer-content">
+          © {currentYear} 
+          <a href="https://seatrium.com" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>Seatrium.</a>
+          all rights reserved. | terms of use | 
+          <a href="https://seatrium.com/assets/privacy-policy/seatrium_Privacy_Policy.pdf" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>privacy policy</a> 
+        </span>
       </div>
     </div>
   )

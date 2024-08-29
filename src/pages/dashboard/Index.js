@@ -26,8 +26,8 @@ const Dashboard = () => {
                         aria-label="scrollable auto tabs example"   
                     >
                         <Tab label="enterprise" value="0" className="custom-tab-style" />
-                        <Tab label="line-of-business" value="1" className="custom-tab-style" />
-                        <Tab label={<span><span style={{textTransform: "uppercase"}}>it</span>-helpdesk</span>} value="2" className="custom-tab-style" />
+                        <Tab label="line of business" value="1" className="custom-tab-style" />
+                        <Tab label={<span><span style={{textTransform: "uppercase"}}>it</span> helpdesk</span>} value="2" className="custom-tab-style" />
                     </TabList>
                 </div>
                 <TabPanel value="0" className="custom-tab-panel-style">

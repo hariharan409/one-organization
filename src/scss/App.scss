@@ -27,3 +27,25 @@
     overflow-y: auto;
     overflow-x: hidden;
   }
+
+  .app-footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .app-footer-content {
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
