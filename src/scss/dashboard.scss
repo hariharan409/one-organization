@@ -8,8 +8,10 @@
 .custom-tab-style {
     font-weight: 600 !important; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-    border-right: 1px solid #000 !important;
-    border-bottom: 1px solid rgba(0,0,0,1) !important;
+    border-right: 1px solid rgba(0,0,0,0.2) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+    text-transform: capitalize !important;
+    font-size: 17px !important;
 }
 
 .custom-tab-style.Mui-selected {
