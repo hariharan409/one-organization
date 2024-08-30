@@ -1,25 +1,25 @@
 
 
-.enterprise-tab-view-layout-element {
+.apps-search-root-element {
     height: 100%;
     width: 100%;
     overflow-y: auto;
 }
 
-.enterprise-tab-view-item {
+.apps-search-item {
     padding: 5px;
     min-width: 200px;
     max-width: 200px;
 }
 
-.enterprise-tab-view-item-image {
+.apps-search-item-image {
     height: 200px;
     object-fit: cover;
     box-shadow: 6px 6px 10px #000000;
     border-radius: 0px 44px 0px 44px;
 }
 
-.enterprise-tab-view-item-dont-have-seatrium-email-link {
+.apps-search-item-dont-have-seatrium-email-link {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.enterprise-tab-view-item-app-name {
+.apps-search-item-app-name {
     height: 40px;
     display: flex;
     justify-content: center;

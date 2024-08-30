@@ -1,31 +1,18 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import { itHelpDeskList } from "./external-links/externalAppList";
 import { CardMedia } from "@mui/material";
 import Slider from "react-slick";
 import Grow from "@mui/material/Grow";
 import { sliderProps } from "./sliderProps";
-import { SearchContext } from "../../contexts/SearchContext";
 import "../../scss/it-helpdesk.scss";
 
 const ITHelpDesk = () => {
-    const {searchText} = useContext(SearchContext);
-    const [appList,setAppList] = useState([]);
-
-    useEffect(() => {
-        if(!searchText) {
-            setAppList(itHelpDeskList);
-            return;
-        }
-        let tempList = itHelpDeskList.filter((enterprise) => enterprise.appName.toLowerCase().includes(searchText.toLowerCase()));
-        setAppList(tempList);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[searchText]);
 
     return(
         <div className="it-helpdesk-tab-view-layout-element">
             <Slider {...sliderProps(itHelpDeskList.length)}>
-                {(appList instanceof Array && appList.length > 0) ?
-                    appList.map((helpdesk,index) => {
+                {(itHelpDeskList instanceof Array && itHelpDeskList.length > 0) ?
+                    itHelpDeskList.map((helpdesk,index) => {
                         return(
                             <Grow key={helpdesk.id} in={true} style={{transformOrigin: "0 0 0"}} timeout={index * 1000}>
                                 <div className="it-helpdesk-tab-view-item">
