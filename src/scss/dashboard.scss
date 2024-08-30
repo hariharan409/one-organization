@@ -12,20 +12,27 @@
     border-bottom: 1px solid rgba(0,0,0,0.2) !important;
     text-transform: capitalize !important;
     font-size: 17px !important;
+    background-color: #FFF !important;
 }
 
 .custom-tab-style.Mui-selected {
-    background-color: rgba(225,222,222,1);
     color: #000 !important;
+    background: linear-gradient(333deg, #2381d5, #d2ebff 50%, #8cc2f1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .custom-tab-panel-style {
     height: calc(100% - 50px);
     padding: 0%;
-    background-color: rgba(225,222,222,1);
+    background: linear-gradient(333deg, #2381d5, #d2ebff 50%, #8cc2f1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .css-1sj2jcg-MuiTabs-indicator {
     margin-top:2px !important;
-    background-color: rgba(225,222,222,1) !important;
+    background-color: #8cc2f1 !important;
 }

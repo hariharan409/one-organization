@@ -33,10 +33,10 @@ const EnterpriseTabView = () => {
                                         <CardMedia component="img" className="enterprise-tab-view-item-image" src={enterprise.appImage} />
                                     </a>
                                     {
-                                    enterprise.noSeatriumLink &&
+                                    enterprise.noSeatriumLink ?
                                     (<a className="enterprise-tab-view-item-dont-have-seatrium-email-link" href={enterprise.noSeatriumLink} target="_blank" rel="noreferrer">
                                         Don't Have Seatrium Email
-                                    </a>)
+                                    </a>) : <div style={{height: "40px",marginTop: "10px",padding: "3px"}}></div>
 
                                     }
                                 </div>

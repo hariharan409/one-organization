@@ -15,7 +15,10 @@
     overflow-x: hidden;
     overflow-y: hidden;
     // padding-inline: 5px;
-    background-color: #FFF;
+    background: linear-gradient(333deg, #2381d5, #d2ebff 50%, #8cc2f1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .app-body-element {
@@ -35,7 +38,6 @@
     height: 20px;
     display: flex;
     align-items: center;
-    background-color: rgba(242,242,242,0.4);
     justify-content: center;
     font-size: 15px;
   }
