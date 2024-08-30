@@ -27,6 +27,7 @@ function App() {
           <a href="https://seatrium.com" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>Seatrium.</a>
           all rights reserved. | 
           <a href="https://seatrium.com/assets/privacy-policy/seatrium_Privacy_Policy.pdf" target="_blank" rel="noreferrer" style={{color: "blue",fontSize: "14px",paddingInline: "3px"}}>privacy policy</a> 
+          | app version - {process.env.REACT_APP_VERSION}
         </span>
       </div>
     </div>
