@@ -6,6 +6,21 @@
     overflow-y: auto;
 }
 
+.apps-search-header-name {
+    max-height: 30px;
+    color: #000;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.apps-search-carousel {
+    /* SUBTRACTING THE ORIGINAL HEIGHT FROM 30PX HEADER TEXT AND MARGIN TOP 20PX*/
+    height: calc(100% - 30px - 20px);
+    margin-top: 20px;
+}
+
 .apps-search-item {
     padding: 5px;
     min-width: 200px;
